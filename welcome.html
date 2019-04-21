@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="welcome.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <style>
+        body{
+    background-color: rgba(0,0,0,0.9);
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header::after{
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url(AdobeStock_86782551.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    filter: blur(0px);
+}
+.main{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 35%;
+    left: 5%;
+    padding: 10px;
+}
+
+.main .title{
+
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color:#ff3333;
+    padding: 50px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main .sub{
+    background-color: #FFFFFF;
+    padding: 5px;
+    padding-left: 2px;
+    margin-left: 50px;
+    opacity: .6;
+    width: 470px;
+    font-size: 25px;
+    font-family: 'Inconsolata', monospace;
+    color: rgb(256, 6, 0);
+    position: absolute;
+}
+.pad0{
+    padding: 0px;
+}
+.down{
+    position: absolute;
+    margin-top: 680px;
+    margin-left: 730px;
+    z-index: 1;
+    color: #ff3333;
+    padding: 162px;
+    border-radius: 50px;
+    opacity: .8;
+}
+.select{
+    padding: 0px;
+    background-color:#f2f2f2;
+}
+.linker{
+    font-size: 25px;
+    padding: 4rem 1rem;
+    font-family: 'Inconsolata', monospace;
+    transition-duration: .5s;
+}
+.linker:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .5s;
+}
+.grid-3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.container{
+    max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  color: #000000;
+}
+.container2{
+    max-width: 960px;
+  margin: auto;
+  padding: 3rem 1rem;
+  overflow: hidden;
+
+}
+.contact{
+    word-spacing: 30px;
+}
+.about{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.left_border{
+    padding-left: 150px;
+    border-left: #333 solid 1.5px;
+}
+.center {
+    text-align: center;
+    margin: auto;
+  }
+.disease{
+  color: #000000;
+}
+.symtoms{
+  color: #000000;
+}
+.bmi{
+   color: #000000;
+}
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="main">
+    <div class="title">    DOCHAT</div>
+    <div class="sub">disease . Symtoms . B M I</div>
+</div>
+    <div class="down">
+        <i class="fas fa-angle-double-down fa-4x"></i>
+    </div>
+
+</header>
+<section class="select">
+    <div class="container grid-3 center">
+    <a href="#">
+        <div class="disease">
+            <h3>Disease</h3>
+        </div>
+    </a>
+    <a href="#">
+        <div class="symtoms">
+            <h3>Symtoms</h3>
+        </div>
+    </a>
+    <a href="#">
+        <div class="bmi">
+            <h3>B.M.I</h3>
+        </div>
+    </a>
+    </div>
+</section>
+<section class="about">
+    <div class="container grid-2 center">
+        <div class="center">
+            <i class="fas fa-users fa-3x"></i>
+            <h3  class="aboutus">About Us</h3>
+        </div>
+        <div class="left_border" >
+            <div class="contact">
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+        </div>
+        <h3>Contact Us</h3>
+        </div>
+
+    </div>
+</section>
+<footer class="footer center">
+    <p>Dochat &copy; 2018 </p>
+</footer>
+</body>
+</html>
